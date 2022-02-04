@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulaire</title>
+    <style>
+        .div {
+            padding-left: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Inscription en licence</h2>
+    <fieldset>
+        <legend>Informations personnelles</legend>
+        <div class="div">
+            votre nom <input type="text" name="nom" maxlength="40" /> <br /> votre prénom <input type="text" name="prenom" maxlength="40" /> <br /> votre age <input type="number" name="age" maxlength="40" /> <br /> votre adresse <textarea name="adresse"
+                rows="5" cols="40"></textarea
+        ><br />
+        votre e-mail <input type="email" name="mail" maxlength="40"><br>
+        votre site <input type="url" name="site" maxlength="40"><br>
+        mot de passe
+        <input type="password" name="pwd" maxlength="40" required /> <br />
+        repeter votre mot de passe
+        <input type="password" name="rpwd" maxlength="40" required /> <br />
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Gestion des groupes des options</legend>
+      <div class="div">
+        votre groupes:
+        <input type="radio" name="grp" /> Groupe 1
+        <input type="radio" name="grp" /> Groupe 2
+        <input type="radio" name="grp" /> Groupe 3 <br />
+        Numero de carte d'etudiant
+        <input
+          name="carte etudiant"
+          type="text"
+          placeholder="numero de carte d'etudiant?"
+        /><br />
+        choisissez les options que vous désirez:
+        <select size="5">
+          <option value="J2E">J2E</option>
+          <option value="Android">Android</option>
+          <option value="Net">Net</option>
+          <option value="HTML5">HTML5</option>
+          <option value="Flex">Flex</option>
+        </select>
+      </div>
+    </fieldset>
+    <div>
+        verification (elle n'accepte que les valeurs [I][N][S][A][T][0-9]{4})<br>
+        <input type="text" name="verif" pattern="[I][N][S][A][T][0-9]{4}">
+    </div>
+    <div style="padding-left: 40%">
+      <button type="submit"><a href="validation.htm">valider</a></button>
+      <input type="reset" value="reinstaller" />
+    </div>
+  </body>
+</html>
